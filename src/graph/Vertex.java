@@ -7,6 +7,7 @@ public class Vertex {
 	private int id;
 	private String name;
 
+
 	public Vertex(int id, String name) {
 		this.id = id;
 		this.name = name;

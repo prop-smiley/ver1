@@ -9,6 +9,22 @@ import java.util.*;
  */
 public class Cami {
     //Dades
-    private static List llistaTrams;
+    public List<Tram> llistatTrams = new ArrayList<Tram>();
+    public Tram lastTram;
+    
+    public Cami(){
+    	
+    
+    }
+    
+    public void afegirTram(Tram nouT){
+    	llistatTrams.add(nouT); 
+    	lastTram = nouT;
+    }
+    
+    public void eliminarTram(){
+    	llistatTrams.remove(llistatTrams.lastIndexOf(lastTram));    	
+    }
+    
     
 }

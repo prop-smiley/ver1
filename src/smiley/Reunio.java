@@ -23,7 +23,7 @@ public class Reunio {
     
     public void afegeixAgent(Agent nouA){
     	this.llistatAgents.add(nouA);
-    	
+    	++this.nAgents;
     }
     
     

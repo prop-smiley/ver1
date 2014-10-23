@@ -12,11 +12,6 @@ public class Cami {
     public List<Tram> llistatTrams = new ArrayList<Tram>();
     public Tram lastTram;
     
-    public Cami(){
-    	
-    
-    }
-    
     public void afegirTram(Tram nouT){
     	llistatTrams.add(nouT); 
     	lastTram = nouT;

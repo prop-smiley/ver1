@@ -13,11 +13,17 @@ public class Reunio {
     private int nAgents;
     private final Ciutat desti;
     private static Ciutat origen;
-    public List<Agent> myList = new ArrayList<Agent>();
+    public List<Agent> llistatAgents = new ArrayList<Agent>();
     
     public Reunio(Ciutat desti, Date data){
     	this.desti = desti;
-    	this.data = data; 
+    	this.data = data;
+    	this.nAgents = 0;
+    }
+    
+    public void afegeixAgent(Agent nouA){
+    	this.llistatAgents.add(nouA);
+    	
     }
     
     

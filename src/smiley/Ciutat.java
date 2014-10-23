@@ -11,8 +11,10 @@ public class Ciutat extends Vertex{
     private static int longitud;
 
     //Metodes
-    public Ciutat(int id, String name,int a) {
+    public Ciutat(int id, String name,int a, int longitud) {
 		super(id, name);		
 		// TODO Auto-generated constructor stub
+		this.longitud = longitud;
 	}
+    
 }

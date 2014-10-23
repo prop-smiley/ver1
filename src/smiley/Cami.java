@@ -26,7 +26,9 @@ public class Cami {
     	llistatTrams.remove(llistatTrams.lastIndexOf(lastTram));    	
     }
     
-    /*public String/*/
+    public String llista(){
+    	return "falta editar"; 
+    }
     
     
 }

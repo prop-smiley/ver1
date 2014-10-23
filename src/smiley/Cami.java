@@ -26,5 +26,7 @@ public class Cami {
     	llistatTrams.remove(llistatTrams.lastIndexOf(lastTram));    	
     }
     
+    /*public String/*/
+    
     
 }

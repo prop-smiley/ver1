@@ -10,10 +10,17 @@ public class Agent {
     Itinerari it;
     Reunio re;
     
+    /*
+     * Crea un nou agent a partir del seu id
+     */
     public Agent(int nouID){
     	idAgent = nouID;
     }
     
+    /*
+     * Converteix el nouCami en un objecte pertanyent a Itinerari
+     * i fa les assignacions necessaries
+     */
     public static void realitzaItinerari(Cami nouCami){
     	/*
     	 * crea itinerari < subclase de cami
@@ -21,6 +28,9 @@ public class Agent {
     	 */
     }
     
+    /*
+     * Funció per assignar la nova reunió
+     */
     public void assistirReunio(Reunio re){
     	this.re = re;
     }

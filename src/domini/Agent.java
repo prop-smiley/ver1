@@ -21,7 +21,7 @@ public class Agent {
      * Converteix el nouCami en un objecte pertanyent a Itinerari
      * i fa les assignacions necessaries
      */
-    public static void realitzaItinerari(Cami nouCami){
+    public void realitzaItinerari(Cami nouCami){
     	/*
     	 * crea itinerari < subclase de cami
     	 * assigna it = nou itinerari

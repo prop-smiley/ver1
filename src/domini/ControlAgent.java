@@ -21,42 +21,78 @@ public class ControlAgent {
 	 */
     }
     
-    public void nouAgent(int nouID){
-    	Agent a = new Agent(nouID);
-    	Agents.add(a);
-    	++nAgents;
+    public void nouAgent(int nouID){        
+        int i = 0; boolean conte = false;
+        Agent aux = null;
+        while((Agents.size() > i)){
+            aux = Agents.get(i);
+            if (aux.id() == nouID) {
+                conte = true;
+            }
+            ++i;
+        }
+        if (conte) System.out.println("Invalid entry\n"); //creo que no se hacen salidas por pantalla
+        else {Agent a = new Agent(nouID); Agents.add(a); ++nAgents;}
     }
     
     public void eliminaAgent(int idAgent){
-    	for(int i = 0 ; i<nAgents ; ++i){
-    		/*
-    		 * import java.util.List;
-				...
-				List<String> l = arrayList;
-				for( String s : l ){
-			  		System.out.println( s );
-				}
-    		 */
-    	}
+        for(Agent a : Agents){
+            if (idAgent == a.id())
+                 Agents.remove(a);
+        }
     }
-    public Agent getAgent(int id){
-    	return null;
+    public Agent getAgent(int idAgent){
+        int i = 0;
+        Agent aux = null; Agent res = null;
+        while((Agents.size() > i)){
+            aux = Agents.get(i);
+            if (aux.id() == idAgent) res = aux;
+            ++i;
+        }
+        return res;
     }
     
-    public void modificaItinerari(Agent a, Itinerari it){
-    	
+    // a la OP realitzaItinerari de Agente le llega un camino, asi que aqui pedimos camino
+    public void modificaItinerari(Agent a, Cami it){
+    	int i = 0; //boolean done = false;
+        while((Agents.size() > i)){
+            if (Agents.get(i).equals(a)){
+                Agents.get(i).realitzaItinerari(it);
+            }
+            ++i;
+        }
     }
     public void modificaReunio(Agent a, Reunio re){
-		
-	}
-    
-    
-    public void eliminarItinerari(Agent a, Itinerari it){
-    	
+	int i = 0; //boolean done = false;
+        while((Agents.size() > i)){
+            if (Agents.get(i).equals(a)){
+                Agents.get(i).assistirReunio(re);
+            }
+            ++i;
+        }
     }
-    public void eliminarReunio(Agent a, Reunio re){
-		
-	}
+    
+    //no hace falta pasarle el Itinerari it como estaba antes
+    public void eliminarItinerari(Agent a){
+    	int i = 0; //boolean done = false;
+        while((Agents.size() > i)){
+            if (Agents.get(i).equals(a)){
+                Agents.get(i).realitzaItinerari(null);
+            }
+            ++i;
+        }
+    }
+    
+    //si vas a eliminar la reunion no hace falta pasarle la reunion, como en eli-itin
+    public void eliminarReunio(Agent a){
+	int i = 0; //boolean done = false;
+        while((Agents.size() > i)){
+            if (Agents.get(i).equals(a)){
+                Agents.get(i).assistirReunio(null);
+            }
+            ++i;
+        }
+    }
     
     
     

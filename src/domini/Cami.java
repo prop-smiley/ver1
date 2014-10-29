@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  *
- * @author arreglado
+ * @author arreglado2
  */
 public class Cami {
     //Dades

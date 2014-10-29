@@ -1,4 +1,4 @@
-package smiley;
+package domini;
 
 import java.io.IOException;
 

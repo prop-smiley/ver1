@@ -1,4 +1,4 @@
-package smiley;
+package domini;
 
 import java.util.*;
 
@@ -20,6 +20,7 @@ public class Cami {
     public void eliminarTram(){
     	llistatTrams.remove(llistatTrams.lastIndexOf(lastTram));    	
     }
+    
     
     public String llista(){
     	return "falta editar"; 

@@ -1,7 +1,5 @@
-package smiley;
+package domini;
 
-import graph.Edge;
-import graph.Vertex;
 
 /**
  *

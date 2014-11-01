@@ -30,6 +30,7 @@ public class ControlDades {
 
     /**
      * Funció que obre el fitxer
+     * @param path un String que indica el path al fitxer
      */
     public void obrirfitxer(String path) throws IOException {
         fitxer = new File(path);
@@ -72,7 +73,8 @@ public class ControlDades {
 
     /**
      * Funció que llegeix el fitxer
-     * @return Un array de Strings que conté los datos
+     * @param num numero de dades a llegir
+     * @return Un array de Strings que conté les dades
      */
     public String[] llegirDades(int num) throws IOException {
         ArrayList<String> dades = new ArrayList();

@@ -2,6 +2,9 @@ package domini;
 
 //import graph.Vertex;
 
+//import graph.*;
+//import graph.Vertex;
+
 public class Vertex {
 
 	private int id;

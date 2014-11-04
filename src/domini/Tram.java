@@ -1,11 +1,13 @@
 package domini;
 
+import weighted.WeightedEdge;
+
 
 /**
  *
  * @author alumne
  */
-public class Tram extends Edge {
+public class Tram extends WeightedEdge {
 	public Cami c;
 	;
 	;

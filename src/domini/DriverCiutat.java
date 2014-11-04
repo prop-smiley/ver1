@@ -39,19 +39,19 @@ public class DriverCiutat {
                         break;
                     }
                     case 2: {
-                        ciut.setNom(Integer.parseInt(lsplited[1]), lsplited[2]);
+                    //    ciut.setNom(Integer.parseInt(lsplited[1]), lsplited[2]);
                         break;
                     }
                     case 3: {
-                        ciut.setLong(Integer.parseInt(lsplited[1]), Integer.parseInt(lsplited[2]));
+                    //    ciut.setLong(Integer.parseInt(lsplited[1]), Integer.parseInt(lsplited[2]));
                         break;
                     }
                     case 4: {
-                        System.out.println(ciut.getNom(Integer.parseInt(lsplited[1])));
+                    //    System.out.println(ciut.getNom(Integer.parseInt(lsplited[1])));
                         break;
                     }
                     case 5: {
-                        System.out.println(ciut.getLong(Integer.parseInt(lsplited[1])));
+                    //    System.out.println(ciut.getLong(Integer.parseInt(lsplited[1])));
                         break;
                     }
                     case 0: {

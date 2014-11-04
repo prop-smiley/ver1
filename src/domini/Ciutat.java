@@ -24,34 +24,14 @@ public class Ciutat extends Vertex{
     }
 
     /**
-     * Accio set del Nom de la ciutat objecte.
-     * @param id integer que indica l ID de la ciutat objecte.
-     * @param name string que indica el nom que sera assignat a la ciutat objecte
-     */
-    public void setNom(int id, String name) {
-        
-    }
-
-    /**
      * Accio set de la longitud de la ciutat objecte
      * @param id integer que indica l ID de la ciutat objecte.
      * @param longit integer que indica la longitud que sera assignat a la ciutat objecte
      */
-    public void setLong(int id, int longit) {
-        
+    public void setLong(int longitud) {
+    	this.longitud = longitud;
     }
     
-    /**
-     * Funcio get del Nom de la ciutat objecte.
-     * @param id integer que identifica la ciutat.
-     * @return nom de la ciutat amb identificador id.
-     */
-    public String getNom(int id) {
-        // return pillar_vertcie.getName(); FALTA VER OPS en VERTICE
-        //PARA SACARLA. DE MOMENTO HAY BASURA que sino se queja
-        String b = "";
-        return b;
-    }
 
     /**
      * Funcio get de la longitud de la ciutat objecte.

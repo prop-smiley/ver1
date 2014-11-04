@@ -1,7 +1,5 @@
 package domini;
-/*
- * dsfhg
- */
+
 import java.util.*;
 import java.util.ArrayList;
 

@@ -1,5 +1,6 @@
 package domini;
 
+import base.BaseVertex;
 import weighted.WeightedEdge;
 
 
@@ -11,7 +12,7 @@ public class Tram extends WeightedEdge {
 	public Cami c;
 	;
 	;
-	public Tram(Vertex source, Vertex destination,int weight) {
+	public Tram(BaseVertex source, BaseVertex destination,int weight) {
 		super(source, destination,weight);
 		// TODO Auto-generated constructor stub
 	}

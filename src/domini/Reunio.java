@@ -26,5 +26,14 @@ public class Reunio {
     	++this.nAgents;
     }
     
+
+    /*
+     * getter i setters 
+     */
+    
+    /*
+     * public bool que retorna si el agent existeix a la reunio
+     */
+    
     
 }

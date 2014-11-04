@@ -21,11 +21,8 @@ public class Agent {
      * Converteix el nouCami en un objecte pertanyent a Itinerari
      * i fa les assignacions necessaries
      */
-    public static void realitzaItinerari(Cami nouCami){
-    	/*
-    	 * crea itinerari < subclase de cami
-    	 * assigna it = nou itinerari
-    	 */
+    public void realitzaItinerari(Itinerari it){
+    	this.it = it;
     }
     
     /*
@@ -49,7 +46,7 @@ public class Agent {
     }
     
     public Reunio re(){
-    	return re;
+    	return this.re;
     }
     
 }

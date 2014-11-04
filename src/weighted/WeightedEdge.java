@@ -1,10 +1,10 @@
 package weighted;
 
-import domini.Vertex;
+import base.BaseVertex;
 
 public class WeightedEdge {
 
-	public WeightedEdge(Vertex source, Vertex destination, int weight) {
+	public WeightedEdge(BaseVertex source, BaseVertex destination, int weight) {
 		// TODO Auto-generated constructor stub
 	}
 

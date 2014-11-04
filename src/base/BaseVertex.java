@@ -17,6 +17,10 @@ public class BaseVertex {
 		this.id = id;
 	}
 
+	public BaseVertex(int id2, String name) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * Get the vertex id
 	 * 

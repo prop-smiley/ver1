@@ -2,7 +2,7 @@ package domini;
 
 /**
  *
- * @author alumne
+ * @author alumne dd
  */
 public class Agent {
     //Dades

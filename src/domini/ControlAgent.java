@@ -83,6 +83,7 @@ public class ControlAgent {
     public void setItinerari(Agent a, Cami it){
         // a la OP realitzaItinerari de Agente le llega un camino, asi que aqui pedimos camino
     	int i = 0; //boolean done = false;
+        //CREAR CAMI A PARTIR DE ITINERARI PETA POR ESO
         while((Agents.size() > i)){
             if (Agents.get(i).equals(a)){
                 Agents.get(i).setIt(it);

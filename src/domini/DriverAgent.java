@@ -14,7 +14,7 @@ import java.util.Scanner;
  
 /**
  *
- * @author gg
+ * @author
  */
 public class DriverAgent {
     private static void menu() {

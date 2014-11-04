@@ -72,7 +72,7 @@ public class ControlDades {
 
     /**
      * Funció que llegeix el fitxer
-     * @return Un array de Strings que conté los datos
+     * @return Un array de Strings que conté les dades
      */
     public String[] llegirDades(int num) throws IOException {
         ArrayList<String> dades = new ArrayList();

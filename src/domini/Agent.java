@@ -60,13 +60,8 @@ public class Agent {
      * Accio set del parametre Itinerari
      * @param cam cami que sera assignat com a itinerari a l agent objecte
      */
-    public void setIt(Cami cam){
-         /*
-    	 * crea itinerari < subclase de cami
-    	 * assigna it = nou itinerari
-    	 */
-        //it = itin;
-
+    public void setIt(Itinerari it){
+    	this.it = it;
     }
     
     /**

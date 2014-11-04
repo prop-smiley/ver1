@@ -86,7 +86,7 @@ public class ControlAgent {
         //CREAR CAMI A PARTIR DE ITINERARI PETA POR ESO
         while((Agents.size() > i)){
             if (Agents.get(i).equals(a)){
-                Agents.get(i).setIt(it);
+                Agents.get(i).setIt((Itinerari)it);
             }
             ++i;
         }

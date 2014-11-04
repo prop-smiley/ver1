@@ -11,7 +11,7 @@ public class ControlAgent {
     private int nAgents;
     
     public ControlAgent(){
-    	Agents = new ArrayList();
+    	Agents = new ArrayList<Agent>();
     	nAgents = 0;
     }
     

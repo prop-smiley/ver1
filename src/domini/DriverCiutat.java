@@ -51,7 +51,7 @@ public class DriverCiutat {
                         break;
                     }
                     case 5: {
-                    //    System.out.println(ciut.getLong(Integer.parseInt(lsplited[1])));
+                    //  --  System.out.println(ciut.getLong(Integer.parseInt(lsplited[1])));
                         break;
                     }
                     case 0: {

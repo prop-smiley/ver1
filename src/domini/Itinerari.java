@@ -1,18 +1,28 @@
 package domini;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
- * @author alumne
+ * @author eric
  */
 public class Itinerari extends Cami{
 	
-	Agent agent;
-
-        public void setAgent(Agent a){
-            this.agent = a;
-        }
+    public List<Agent> llistatAgents = new ArrayList<Agent>();
+   
+    public Itinerari(int id) {
+        super(id);
+    }
+    public void insertAgent(Agent a){
+        this.llistatAgents.add(a);
+    }
         
-        public Agent getAgent(){
-            return this.agent;
-        }
+    public List<Agent> getAgent(){
+        return this.llistatAgents;
+    }
+    
+    public boolean equals (Itinerari it){
+        return (this.getidCami() == it.getidCami());
+    }
 }

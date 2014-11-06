@@ -25,19 +25,17 @@ public class Ciutat extends Vertex{
 
     /**
      * Accio set del Nom de la ciutat objecte.
-     * @param id integer que indica l ID de la ciutat objecte.
      * @param name string que indica el nom que sera assignat a la ciutat objecte
      */
-    public void setNom(int id, String name) {
+    public void setNom(String name) {
         
     }
 
     /**
      * Accio set de la longitud de la ciutat objecte
-     * @param id integer que indica l ID de la ciutat objecte.
      * @param longit integer que indica la longitud que sera assignat a la ciutat objecte
      */
-    public void setLong(int id, int longit) {
+    public void setLong(int longit) {
         
     }
     

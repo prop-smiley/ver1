@@ -15,7 +15,7 @@ public class Agent {
      * @param nouID integer que indica l ID del nou agent
      */
     public Agent(int nouID){
-    	idAgent = nouID;
+    	this.idAgent = nouID;
     }
     
     /**
@@ -28,7 +28,7 @@ public class Agent {
     
     @Override
     public String toString(){
-    	Integer aux = idAgent;
+    	Integer aux = this.idAgent;
     	return aux.toString();
     }
     
@@ -37,7 +37,7 @@ public class Agent {
      * @return id de l agent objecte.
      */
     public int getId(){
-    	return idAgent;
+    	return this.idAgent;
     }
     
     /**
@@ -45,7 +45,7 @@ public class Agent {
      * @return Itinerari de l agent objecte.
      */
     public Itinerari getIt(){
-    	return it;
+    	return this.it;
     }
     
     /**
@@ -53,15 +53,16 @@ public class Agent {
      * @return Reunio de l agent objecte.
      */
     public Reunio getRe(){
-    	return re;
+    	return this.re;
     }
     
     /**
      * Accio set del parametre Itinerari
      * @param cam cami que sera assignat com a itinerari a l agent objecte
      */
-    public void setIt(Itinerari it){
-    	this.it = it;
+    public void setIt(Cami cam){
+        Itinerari aux = new Itinerari(idAgent, cam);
+    	this.it = aux;
     }
     
     /**
@@ -69,7 +70,7 @@ public class Agent {
      * @param reun Reunio que sera assignada al Agent objecte
      */
     public void setRe(Reunio reun){
-        re = reun;
+        this.re = reun;
     }
     
 }

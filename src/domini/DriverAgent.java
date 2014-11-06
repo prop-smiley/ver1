@@ -66,8 +66,8 @@ public class DriverAgent {
                         break;
                     }
                     case 6: {
-                        Itinerari it = new Itinerari();
-                        a.setIt(it);
+                        Cami cam = new Cami();
+                        a.setIt(cam);
                         break;
                     }
                     case 7: {

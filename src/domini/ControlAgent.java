@@ -49,7 +49,7 @@ public class ControlAgent {
     
     /**
      * Accio que elimina un Agent de la llista d Agents.
-     * @param nouID integer que indica el nou ID de l agent a eliminar.
+     * @param idAgent integer que indica el nou ID de l agent a eliminar.
      * @post l Agent amb ID nouID ha estat tret d ela llista d Agents.
      */
     public void eliminaAgent(int idAgent){
@@ -78,15 +78,14 @@ public class ControlAgent {
     /**
      * Accio set de l Itinerari d un agent.
      * @param a Agent del qual volem modificar l Itinerari
-     * @param it Cami que volem que passi a ser l itinerari de l Agent.
+     * @param cam Cami que volem que passi a ser l itinerari de l Agent.
      */
-    public void setItinerari(Agent a, Cami it){
+    public void setItinerari(Agent a, Cami cam){
         // a la OP realitzaItinerari de Agente le llega un camino, asi que aqui pedimos camino
     	int i = 0; //boolean done = false;
-        //CREAR CAMI A PARTIR DE ITINERARI PETA POR ESO
         while((Agents.size() > i)){
             if (Agents.get(i).equals(a)){
-                Agents.get(i).setIt(it);
+                Agents.get(i).setIt(cam);
             }
             ++i;
         }

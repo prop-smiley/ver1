@@ -13,8 +13,23 @@ public class Cami {
     public Tram lastTram;
     
     /**
+     * Constructor per defecte.
+     */
+    public Cami(){
+        
+    }
+    
+    /**
+     * Funcio per retornar els trams del cami objecte
+     * @return llista de trams que te el cami objecte
+     */
+    public List<Tram> getLlistattramscami(){
+    	return llistatTrams;
+    }
+    
+    /**
      * Accio per afegir tram al cami objecte
-     * @param nout Tram nou que formara par del cami
+     * @param nouT Tram nou que formara par del cami
      */
     public void afegirTram(Tram nouT){
     	llistatTrams.add(nouT); 

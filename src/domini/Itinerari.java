@@ -13,7 +13,6 @@ public class Itinerari extends Cami{
 
 	public Itinerari(int id) {
 		super(id);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void insertAgent(Agent a){

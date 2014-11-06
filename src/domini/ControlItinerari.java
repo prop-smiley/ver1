@@ -8,7 +8,6 @@ package domini;
 
 import java.util.*;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  *
@@ -28,7 +27,13 @@ public class ControlItinerari {
        return ctrlItinerari.contains(it);
     }
     
-    public void modificarItinerari() {}
+    // El itinerario está creado. vamos a ponerle un agente.
+    public void inserirAgent(Itinerari it, Agent a) {
+        Itinerari aux = new Itinerari(it.getidCami());  //Nuevo it con ID al que reemplazaremos
+        aux.insertAgent(a);                             //it con agente a asignado.
+        int index = ctrlItinerari.indexOf(it);          //index del itinerario que queremos reemplazar
+        ctrlItinerari.set(index, aux);                  //reemplazo de it por aux.
+    }
     
     public void llistarItinerari() {}
 }

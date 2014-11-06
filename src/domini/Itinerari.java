@@ -18,7 +18,7 @@ public class Itinerari extends Cami{
         this.llistatAgents.add(a);
     }
         
-    public List<Agent> getAgent(){
+    public List<Agent> getAgents(){
         return this.llistatAgents;
     }
     

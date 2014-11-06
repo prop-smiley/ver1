@@ -55,8 +55,8 @@ public class Cami {
         return res;
     }
     
-    public boolean equals(int id){
-    	return (this.idCami == id);
+    public boolean equals(Cami b){
+    	return (this.idCami == b.getidCami());
     }
     
     

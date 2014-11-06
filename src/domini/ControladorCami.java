@@ -50,5 +50,9 @@ public class ControladorCami {
            else System.out.println("El cami que vols eliminar no existeix");
 
        }
+       hfgjhgfdghdfhg(int id, Tram t){
+    	   cami.busca(t);
+    	   
+       }
     
 }

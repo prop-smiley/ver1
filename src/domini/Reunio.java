@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  *
- * @author alumne
+ * @author susanhenriquezelias
  */
 public class Reunio {
     

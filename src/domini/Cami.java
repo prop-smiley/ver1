@@ -5,11 +5,11 @@ import java.util.*;
 
 /**
  *
- * @author alumne
+ * @author susanhenriquezelias
  */
 public class Cami {
     //Dades
-    private int idCami;
+    private final int idCami;
     public List<Tram> llistatTrams = new ArrayList<Tram>();
     
     public Cami(int id){
@@ -18,7 +18,7 @@ public class Cami {
     
     /**
      * Accio per afegir tram al cami objecte
-     * @param nout Tram nou que formara par del cami
+     * @param nouT Tram nou que formara par del cami
      */
     public void afegirTram(Tram nouT){
     	llistatTrams.add(nouT); 

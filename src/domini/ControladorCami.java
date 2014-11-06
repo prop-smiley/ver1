@@ -14,19 +14,26 @@ public class ControladorCami {
        public List<Cami> llistatCamins = new ArrayList<Cami>();
        
        
+       public ControladorCami(){
+    	   
+       }
+       
        //existe el camino?
        public boolean Jaexisteixcami(int id){
            Iterator<Cami>iter = llistatCamins.iterator();
            while(iter.hasNext()){
-               if(iter.next().getidCami() == id) return true;
+               if(iter.next().equals(id)) return true;
            }
            return false;
 
        }
        
        //añado un nuevo camino
-       public void afegircami(Cami c){
-           if(Jaexisteixcami(c.getidCami()) == false) this.llistatCamins.add(c);
+       public void afegircami(int id){
+           if(Jaexisteixcami(id) == false){
+        	   Cami c =  new Cami(id);
+        	   this.llistatCamins.add(c);
+           }
            else System.out.println("El cami ja existeix");
        }
        

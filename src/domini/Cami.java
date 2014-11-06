@@ -12,7 +12,7 @@ public class Cami {
     private int idCami;
     public List<Tram> llistatTrams = new ArrayList<Tram>();
     
-    public void Caminou(int id){
+    public Cami(int id){
          this.idCami = id;
     }
     
@@ -53,6 +53,10 @@ public class Cami {
             if(iter.next().consultaid() == idcomp ) res = true;
         }
         return res;
+    }
+    
+    public boolean equals(int id){
+    	return (this.idCami == id);
     }
     
     

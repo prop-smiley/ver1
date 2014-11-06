@@ -5,11 +5,11 @@ import java.io.IOException;
 
 
 
-public class ControlTram {
+public class ControladorTram {
 	
 	private int idTram;
 	
-	private ControlTram(int idTram){
+	private ControladorTram(int idTram){
 		this.idTram = idTram;
 	}
 	

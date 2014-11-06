@@ -36,7 +36,7 @@ public class Agent {
     	Integer aux = idAgent;
     	return aux.toString();
     }
-    
+        
     public int id(){
     	return idAgent;
     }

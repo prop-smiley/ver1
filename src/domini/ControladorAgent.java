@@ -5,17 +5,17 @@ import java.util.ArrayList;
 
 import static java.util.Collections.binarySearch;
 
-public class ControlAgent {
+public class ControladorAgent {
 
     private ArrayList<Agent> Agents;
     private int nAgents;
     
-    public ControlAgent(){
+    public ControladorAgent(){
     	Agents = new ArrayList<Agent>();
     	nAgents = 0;
     }
     
-    public ControlAgent(int nouID){
+    public ControladorAgent(int nouID){
 	/*
 	 * 
 	 */

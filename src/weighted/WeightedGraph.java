@@ -17,7 +17,7 @@ import base.BaseVertex;
 public class WeightedGraph extends BaseGraph {
 
 	//@Override
-	/*protected void addEdgeToList(BaseEdge edge) {
+	protected void addEdgeToList(BaseEdge edge) {
 		if (edge instanceof WeightedEdge)
 			super.addEdgeToList(edge);
 		else {
@@ -31,7 +31,7 @@ public class WeightedGraph extends BaseGraph {
 					.println("\t'addEdge(BaseVertex source, BaseVertex destination, int weight)'");
 		}
 
-	}*/
+	}
 
 	/**
 	 * Adds a weighted edge from source to destination. Does nothing if edge is

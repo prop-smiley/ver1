@@ -11,7 +11,7 @@ public class Reunio {
     //Dades
     private Date data;
     private int nAgents;
-    private static Ciutat desti; //CAMBIO DE FINAL A STATIC PARA EL SETTER
+    private Ciutat desti; 
     private static Ciutat origen;
     public List<Agent> llistatAgents = new ArrayList<Agent>();
     
@@ -40,7 +40,7 @@ public class Reunio {
      * @return la ciutat Origen de la Reunio objecte.
      */
     public Ciutat getOrigen(){
-    	return origen;
+    	return this.origen;
     }
     
     /**
@@ -48,7 +48,7 @@ public class Reunio {
      * @return la ciutat Desti de la Reunio objecte.
      */
     public Ciutat getDesti(){
-    	return desti;
+    	return this.desti;
     }
     
     /**
@@ -56,7 +56,7 @@ public class Reunio {
      * @return el nombre d Agents assistents a la Reunio objecte.
      */
     public int getNAgents(){
-    	return nAgents;
+    	return this.nAgents;
     }
     
     /**
@@ -64,7 +64,7 @@ public class Reunio {
      * @param ori ciutat que es vol assignar com a origen a la Reunio objecte.
      */
     public void setOrigen(Ciutat ori){
-        origen = ori;
+        this.origen = ori;
     }
     
     /**
@@ -72,7 +72,7 @@ public class Reunio {
      * @param des ciutat que es vol assignar com a desti a la Reunio objecte.
      */
     public void setDesti(Ciutat des){
-        desti = des;
+        this.desti = des;
     }
     
     /**
@@ -80,6 +80,34 @@ public class Reunio {
      * @param num integer que es vol assignar com a NAgents a la Reunio objecte.
      */
     public void setNAgents(int num){
-        nAgents = num;
+        this.nAgents = num;
     }
+    
+    
+    //buscar si hay un agente
+    public boolean hayAgente(int id){
+        Iterator<Agent> iter = llistatAgents.iterator();
+        while(iter.hasNext()){
+            if((iter.next().getId()) == id) return true;
+        }
+        return false;
+    }
+    
+    //añadir un agente
+    public void afegirAgent(Agent a){
+        if(hayAgente(a.getId()) == false) this.llistatAgents.add(a);
+        else System.out.println("El agente que intentas añadir ya existe en la reunión");
+    }
+    
+    //eliminar un agente
+    public void eliminarAgent(Agent a){
+        if(hayAgente(a.getId())) this.llistatAgents.remove(a);
+        else System.out.println("El agente que intentas eliminar no existe en la reunión");
+    }
+    //modificar ciudad destino
+    public void modificarDesti(Ciutat d){
+        this.desti = d;
+    }
+    
+    
 }

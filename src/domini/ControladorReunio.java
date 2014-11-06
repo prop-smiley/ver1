@@ -6,6 +6,8 @@
 package domini;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -18,5 +20,30 @@ public class ControladorReunio {
     public ControladorReunio(){
         
     }
+    
+    public boolean reunioExists(Reunio re){
+        return llistatReunions.contains(re);
+    }
+    
+    
+    public Reunio getReunio(Date data, Ciutat desti){
+        Iterator<Reunio>iter = llistatReunions.iterator();
+        while(iter.hasNext()){
+            //if(/**/) falta poner la comparacion
+                return iter.next();
+        }
+        System.out.println("No existe la reunioblablabla");
+        return null;
+    } 
+    
+    public void newReunio(Ciutat desti, Date data){
+  	   	Reunio re =  new Reunio(desti,data);
+        if(reunioExists(re) == false){
+     	   this.llistatReunions.add(re);
+        }
+        else System.out.println("La reunio ja existeix");
+    }
+    
+    
     
 }

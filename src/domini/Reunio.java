@@ -36,10 +36,18 @@ public class Reunio {
     }
     
     /**
+     * Funcio get del parametre data.
+     * @return la Date data de la Reunio objecte.
+     */
+    public Date data(){
+ 	   return this.data;
+    }
+    
+    /**
      * Funcio get del parametre Origen.
      * @return la ciutat Origen de la Reunio objecte.
      */
-    public Ciutat getOrigen(){
+    public Ciutat origen(){
     	return this.origen;
     }
     
@@ -47,7 +55,7 @@ public class Reunio {
      * Funcio get del parametre Desti.
      * @return la ciutat Desti de la Reunio objecte.
      */
-    public Ciutat getDesti(){
+    public Ciutat desti(){
     	return this.desti;
     }
     
@@ -55,7 +63,7 @@ public class Reunio {
      * Funcio get del parametre NAgents.
      * @return el nombre d Agents assistents a la Reunio objecte.
      */
-    public int getNAgents(){
+    public int nAgents(){
     	return this.nAgents;
     }
     
@@ -107,6 +115,10 @@ public class Reunio {
     //modificar ciudad destino
     public void modificarDesti(Ciutat d){
         this.desti = d;
+    }
+    
+    public boolean equals(Reunio re){
+    	return (this.data().equals(re.data()) &&  this.desti.equals(re.desti()));    	
     }
     
     

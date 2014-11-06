@@ -50,7 +50,7 @@ public class Cami {
         boolean res = false;
         Iterator<Tram>iter = llistatTrams.iterator();
         while(iter.hasNext()){
-            if(iter.next().consultaid() == idcomp ) res = true;
+            if(iter.next().id() == idcomp ) res = true;
         }
         return res;
     }

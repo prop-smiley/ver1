@@ -22,11 +22,22 @@ public class ControladorCami {
        public boolean Jaexisteixcami(int id){
            Iterator<Cami>iter = llistatCamins.iterator();
            while(iter.hasNext()){
-               if(iter.next().equals(id)) return true;
+               //if(iter.next().equals(buscarcami(id))) return true;
+               if(buscarcami(id).equals(iter.next())) return true;
            }
            return false;
 
        }
+       public Cami buscarcami(int id){
+           Iterator<Cami>iter = llistatCamins.iterator();
+           while(iter.hasNext()){
+               if((iter.next().getidCami()) == id){ 
+                   return iter.next();
+               }
+           }
+           System.out.println("No existe el camino con id: " +id);
+           return null;
+       } 
        
        //añado un nuevo camino
        public void afegircami(int id){
@@ -50,8 +61,10 @@ public class ControladorCami {
            else System.out.println("El cami que vols eliminar no existeix");
 
        }
-       hfgjhgfdghdfhg(int id, Tram t){
-    	   cami.busca(t);
+       //id es el id del camino donde queremos 
+      public boolean tetram(int id, Tram t){
+          Cami c = buscarcami(id);
+    	   return c.teTram(t.id());
     	   
        }
     

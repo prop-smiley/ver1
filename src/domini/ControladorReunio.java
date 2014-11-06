@@ -21,7 +21,11 @@ public class ControladorReunio {
         
     }
     
+<<<<<<< HEAD
     public boolean exists(Reunio re){
+=======
+    public boolean reunioExists(Reunio re){
+>>>>>>> origin/dev
         return llistatReunions.contains(re);
     }
     
@@ -38,7 +42,11 @@ public class ControladorReunio {
     
     public void newReunio(Ciutat desti, Date data){
   	   	Reunio re =  new Reunio(desti,data);
+<<<<<<< HEAD
         if(exists(re) == false){
+=======
+        if(reunioExists(re) == false){
+>>>>>>> origin/dev
      	   this.llistatReunions.add(re);
         }
         else System.out.println("La reunio ja existeix");

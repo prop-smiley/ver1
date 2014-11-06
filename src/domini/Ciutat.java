@@ -2,11 +2,16 @@ package domini;
 
 import base.BaseVertex;
 
+
 /**
  *
  * @author alumne
  */
+<<<<<<< HEAD
+public class Ciutat extends Vertex{
+=======
 public class Ciutat extends BaseVertex{
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce
 
     //Dades
     private static int longitud;

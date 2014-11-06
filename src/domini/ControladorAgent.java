@@ -5,11 +5,12 @@ import java.util.ArrayList;
 
 import static java.util.Collections.binarySearch;
 
-public class ControlAgent {
+public class ControladorAgent {
 
     private ArrayList<Agent> Agents;
     private int nAgents;
     
+<<<<<<< HEAD:src/domini/ControlAgent.java
     /**
      * Constructor per defecte.
      */
@@ -23,6 +24,14 @@ public class ControlAgent {
      * @param nouID integer que indica l ID del nou agent creat.
      */
     public ControlAgent(int nouID){
+=======
+    public ControladorAgent(){
+    	Agents = new ArrayList<Agent>();
+    	nAgents = 0;
+    }
+    
+    public ControladorAgent(int nouID){
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce:src/domini/ControladorAgent.java
 	/*
 	 * 
 	 */

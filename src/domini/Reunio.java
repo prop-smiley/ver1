@@ -11,7 +11,11 @@ public class Reunio {
     //Dades
     private Date data;
     private int nAgents;
+<<<<<<< HEAD
+    private static Ciutat desti; //CAMBIO DE FINAL A STATIC PARA EL SETTER
+=======
     private Ciutat desti; 
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce
     private static Ciutat origen;
     public List<Agent> llistatAgents = new ArrayList<Agent>();
     
@@ -47,23 +51,72 @@ public class Reunio {
      * Funcio get del parametre Origen.
      * @return la ciutat Origen de la Reunio objecte.
      */
+<<<<<<< HEAD
     public Ciutat origen(){
+=======
+    public Ciutat getOrigen(){
+<<<<<<< HEAD
+    	return origen;
+=======
+>>>>>>> 0033bda3c9c3f6cc292ccf49efbab4d13dda9851
     	return this.origen;
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce
     }
     
     /**
      * Funcio get del parametre Desti.
      * @return la ciutat Desti de la Reunio objecte.
      */
+<<<<<<< HEAD
     public Ciutat desti(){
+=======
+    public Ciutat getDesti(){
+<<<<<<< HEAD
+    	return desti;
+=======
+>>>>>>> 0033bda3c9c3f6cc292ccf49efbab4d13dda9851
     	return this.desti;
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce
     }
     
     /**
      * Funcio get del parametre NAgents.
      * @return el nombre d Agents assistents a la Reunio objecte.
      */
+<<<<<<< HEAD
     public int nAgents(){
+=======
+    public int getNAgents(){
+<<<<<<< HEAD
+    	return nAgents;
+    }
+    
+    /**
+     * Funcio set del parametre Origen
+     * @param ori ciutat que es vol assignar com a origen a la Reunio objecte.
+     */
+    public void setOrigen(Ciutat ori){
+        origen = ori;
+    }
+    
+    /**
+     * Funcio set del parametre Desti
+     * @param des ciutat que es vol assignar com a desti a la Reunio objecte.
+     */
+    public void setDesti(Ciutat des){
+        desti = des;
+    }
+    
+    /**
+     * Funcio set del parametre NAgents
+     * @param num integer que es vol assignar com a NAgents a la Reunio objecte.
+     */
+    public void setNAgents(int num){
+        nAgents = num;
+    }
+}
+=======
+>>>>>>> 0033bda3c9c3f6cc292ccf49efbab4d13dda9851
     	return this.nAgents;
     }
     
@@ -123,3 +176,4 @@ public class Reunio {
     
     
 }
+>>>>>>> eb240012d835e306d3288919a15ec49ead3a44ce

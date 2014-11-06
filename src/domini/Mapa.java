@@ -4,7 +4,7 @@ package domini;
 import weighted.WeightedGraph;
 /**
  *
- * @author alumne
+ * @author joan
  */
 public class Mapa extends WeightedGraph{
 

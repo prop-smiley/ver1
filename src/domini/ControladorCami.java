@@ -28,7 +28,7 @@ public class ControladorCami {
            return false;
 
        }
-       public Cami buscarcami(int id){//
+       public Cami buscarcami(int id){
            Iterator<Cami>iter = llistatCamins.iterator();
            while(iter.hasNext()){
                if((iter.next().getidCami()) == id){ 

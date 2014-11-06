@@ -15,6 +15,8 @@ public class Agent {
      */
     public Agent(int nouID){
     	idAgent = nouID;
+    	it = null;
+    	re = null;
     }
     
     /*

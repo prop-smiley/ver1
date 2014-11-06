@@ -42,12 +42,12 @@ public class WeightedGraph extends BaseGraph {
 	 * @param destination
 	 * @param weight
 	 */
-	/*public void addEdge(int sourceId, int destinationId, int weight) {
+	public void addEdge(int sourceId, int destinationId, int weight) {
 		BaseVertex source = getVertex(sourceId);
 		BaseVertex destination = getVertex(destinationId);
 		WeightedEdge edge = new WeightedEdge(source, destination, weight);
 		super.addEdgeToList(edge);
-	}*/
+	}
 
 	/**
 	 * Adds a weighted edge from source to destination. Does nothing if edge is

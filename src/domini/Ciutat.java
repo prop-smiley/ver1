@@ -18,14 +18,13 @@ public class Ciutat extends BaseVertex{
      * @param  longitud integer que indica la longitud de la ciutat a crear
      */
     public Ciutat(int id, String name, int longitud) {
-	super(id, name);		
-	// TODO Auto-generated constructor stub
-	this.longitud = longitud;
+		super(id, name);		
+		// TODO Auto-generated constructor stub
+		this.longitud = longitud;
     }
 
     /**
      * Accio set de la longitud de la ciutat objecte
-     * @param id integer que indica l ID de la ciutat objecte.
      * @param longit integer que indica la longitud que sera assignat a la ciutat objecte
      */
     public void setLong(int longitud) {
@@ -35,10 +34,8 @@ public class Ciutat extends BaseVertex{
 
     /**
      * Funcio get de la longitud de la ciutat objecte.
-     * @param id integer que identifica la ciutat.
-     * @return longitud de la ciutat amb identificador id.
      */
-    public int getLong(int id) {
+    public int getLong() {
 	return longitud;
     }
     

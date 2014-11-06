@@ -3,31 +3,31 @@ package domini;
 import base.BaseVertex;
 import weighted.WeightedEdge;
 
-
 /**
- *
- * @author alumne
+ * @autor joan
  */
+
 public class Tram extends WeightedEdge {
+	public int id;
 	public int capacity;
 	public int flow;
-	public int id;
-	
+
 	public Cami c;
 
-	public Tram(BaseVertex source, BaseVertex destination,int weight) {
-		super(source, destination,weight);
-		// TODO Auto-generated constructor stub
-		this.capacity = 1;
-		this.flow = 0;
-		
+	public Tram(int id, Ciutat source, Ciutat destination, int weight) {
+			super(source, destination,weight);
+			this.id = id;
+			this.capacity = 1;
+			this.flow = 0;
+			this.c = null;
 	}
-	public Tram(BaseVertex source, BaseVertex destination,int weight, int capacity) {
+	
+	public Tram(int id, Ciutat source, Ciutat destination, int weight, int capacity) {
 		super(source, destination,weight);
-		// TODO Auto-generated constructor stub
+		this.id = id;
 		this.capacity = capacity;
 		this.flow = 0;
-
+		this.c = null;
 	}
 	
 	public int capacity(){
@@ -38,9 +38,10 @@ public class Tram extends WeightedEdge {
 		return this.id;
 	}
 	
-	public boolean lliure(){
-		return (c==(null));
+	public boolean teCami(Cami c){
+		return (c != null);
 	}
+
 	
     
 }

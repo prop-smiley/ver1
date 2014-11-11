@@ -19,6 +19,11 @@ public class ControlItinerari {
     //Constructora
     public ControlItinerari() {}
     
+  /*  public void esItinenari(Cami c) {
+        
+    }
+    */
+    
     public void afegirItinerari(Cami c) {
         ctrlItinerari.add((Itinerari)c);
     }
@@ -27,7 +32,11 @@ public class ControlItinerari {
        return ctrlItinerari.contains(it);
     }
     
-    // El itinerario está creado. vamos a ponerle un agente.
+    
+    /*El itinerario está creado. vamos a ponerle un agente.
+    PRE: El itinerario está creado 
+    POST: Ha sido añadido un agente al itinerario.
+    */
     public void inserirAgent(Itinerari it, Agent a) {
         Itinerari aux = new Itinerari(it.getidCami());  //Nuevo it con ID al que reemplazaremos
         aux.insertAgent(a);                             //it con agente a asignado.
@@ -35,7 +44,7 @@ public class ControlItinerari {
         ctrlItinerari.set(index, aux);                  //reemplazo de it por aux.
     }
     
-    public void llistarItinerari() {}
+ //   public void llistarItinerari() {}
 }
 
 
